@@ -1,136 +1,205 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Topperment Prime School</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Topperment Prime School</title>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
+header {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
 
-        header {
-            background: #004080;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
+nav {
+    background: #34495e;
+    text-align: center;
+    padding: 10px;
+}
 
-        nav {
-            background: #333;
-            text-align: center;
-            padding: 10px;
-        }
+nav a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
 
-        nav a {
-            color: white;
-            margin: 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
+.hero {
+    background: url('https://images.unsplash.com/photo-1588072432836-e10032774350') no-repeat center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
 
-        nav a:hover {
-            color: orange;
-        }
+.btn {
+    background: #e67e22;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
 
-        .hero {
-            background: url('https://images.unsplash.com/photo-1588072432836-e10032774350');
-            background-size: cover;
-            background-position: center;
-            color: white;
-            text-align: center;
-            padding: 100px 20px;
-        }
+.btn:hover {
+    background: #d35400;
+}
 
-        .hero h1 {
-            font-size: 40px;
-        }
+section {
+    padding: 50px;
+    text-align: center;
+}
 
-        .btn {
-            padding: 12px 25px;
-            background: orange;
-            border: none;
-            font-size: 18px;
-            cursor: pointer;
-        }
+h2 {
+    color: #2c3e50;
+}
 
-        section {
-            padding: 30px;
-        }
+/* Gallery */
+.gallery img {
+    width: 30%;
+    margin: 10px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
 
-        .box {
-            background: #f4f4f4;
-            margin: 15px 0;
-            padding: 20px;
-            border-radius: 8px;
-        }
+.gallery img:hover {
+    transform: scale(1.05);
+}
 
-        footer {
-            background: #004080;
-            color: white;
-            text-align: center;
-            padding: 15px;
-        }
+/* Form */
+form input, form textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 10px;
+}
 
-        .whatsapp {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background: green;
-            color: white;
-            padding: 15px;
-            border-radius: 50%;
-            text-decoration: none;
-        }
-    </style>
+/* WhatsApp Button */
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: green;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* Footer */
+footer {
+    background: #2c3e50;
+    color: white;
+    padding: 15px;
+}
+</style>
 </head>
 
 <body>
 
 <header>
-    <h1>Topperment Prime School</h1>
-    <p>Excellence in Education</p>
+<h1>Topperment Prime School</h1>
+<p>Excellence in Education</p>
 </header>
 
 <nav>
-    <a href="#">Home</a>
-    <a href="#">About</a>
-    <a href="#">Admissions</a>
-    <a href="#">Contact</a>
+<a href="#">Home</a>
+<a href="#about">About</a>
+<a href="#gallery">Gallery</a>
+<a href="#admissions">Admissions</a>
+<a href="#contact">Contact</a>
 </nav>
 
 <div class="hero">
-    <h1>Welcome to Our School</h1>
-    <p>Shaping Future Leaders</p>
-    <button class="btn">Apply Now</button>
+<h1>Welcome to Our School</h1>
+<p>Shaping Future Leaders</p>
+
+<a href="https://docs.google.com/forms/d/e/1FAIpQLScKooj3TsFCYKkTJcrLdr3AptDVHDB7i6sZWTOcNVoxFTpNOA/viewform?usp=publish-editor" target="_blank" class="btn">
+Apply Now
+</a>
+
 </div>
 
+<section id="about">
+<h2>About Us</h2>
+<p>Topperment Prime School focuses on academic excellence and overall student development.</p>
+</section>
+
+<section id="gallery">
+<h2>Gallery</h2>
+<div class="gallery">
+<img src="https://images.unsplash.com/photo-1596495577886-d920f1fb7238">
+<img src="https://images.unsplash.com/photo-1584697964403-2c3cbd3f4d1f">
+<img src="https://images.unsplash.com/photo-1606326608606-aa0b62935f2b">
+</div>
+</section>
+
 <section>
-    <div class="box">
-        <h2>About Us</h2>
-        <p>Topperment Prime School focuses on academic excellence and overall student development.</p>
-    </div>
+<h2>Why Choose Us</h2>
+<p>✔ Experienced Teachers</p>
+<p>✔ Smart Classrooms</p>
+<p>✔ Focus on Discipline & Values</p>
+<p>✔ Excellent Results</p>
+</section>
 
-    <div class="box">
-        <h2>Admissions</h2>
-        <p>Admissions are open for all classes. Contact us today to secure your child's future.</p>
-    </div>
+<section id="admissions">
+<h2>Admission Form</h2>
 
-    <div class="box">
-        <h2>Contact Us</h2>
-        <p>📍 Address: Near Police Station,Bheemaram,Hanamkonda</p>
-        <p>📞 Phone: 9550616967</p>
-        <p>📧 Email: school@email.com</p>
-    </div>
+<!-- Google Form Embedded -->
+<iframe 
+src="https://docs.google.com/forms/d/e/1FAIpQLScKooj3TsFCYKkTJcrLdr3AptDVHDB7i6sZWTOcNVoxFTpNOA/viewform?embedded=true" 
+width="80%" height="600">
+</iframe>
+
+<p>OR submit quick enquiry below:</p>
+
+<!-- Formspree Form -->
+<form action="https://formspree.io/f/mzepdjby" method="POST">
+
+<input type="text" name="student_name" placeholder="Student Name" required><br>
+
+<input type="text" name="class" placeholder="Class" required><br>
+
+<input type="tel" name="phone" placeholder="Parent Phone" required><br>
+
+<input type="email" name="email" placeholder="Email" required><br>
+
+<textarea name="message" placeholder="Message"></textarea><br>
+
+<button class="btn" type="submit">Submit</button>
+
+</form>
+
+</section>
+
+<section id="contact">
+<h2>Contact Us</h2>
+<p>📍 Near Police Station, Bheemaram, Hanamkonda</p>
+<p>📞 9550616967</p>
+<p>📧 school@email.com</p>
+</section>
+
+<section>
+<h2>Our Location</h2>
+
+<iframe 
+src="https://maps.google.com/maps?q=hanamkonda&t=&z=13&ie=UTF8&iwloc=&output=embed"
+width="80%" height="300">
+</iframe>
+
 </section>
 
 <footer>
-    <p>© 2026 Topperment Prime School</p>
+<p>© 2026 Topperment Prime School</p>
 </footer>
 
-<a href="https://wa.me/9550616967" class="whatsapp">💬</a>
+<!-- WhatsApp Button -->
+<a class="whatsapp" href="https://wa.me/919550616967" target="_blank">💬</a>
 
 </body>
 </html>
